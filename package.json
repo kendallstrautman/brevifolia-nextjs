@@ -1,0 +1,29 @@
+{
+  "name": "foresry-starter-blog-next",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Forestry & Next",
+  "license": "MIT",
+  "version": "0.1.0",
+  "author": "@forestryio",
+  "scripts": {
+    "develop": "next src",
+    "build": "next build src",
+    "start": "next start src"
+  },
+  "dependencies": {
+    "next": "^9.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  },
+  "keywords": [
+    "next",
+    "forestry"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
