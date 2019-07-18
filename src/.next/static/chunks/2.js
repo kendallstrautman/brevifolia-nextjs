@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[2],{
 
-/***/ "./content/posts/doug-fir.md":
-/*!***********************************!*\
-  !*** ./content/posts/doug-fir.md ***!
-  \***********************************/
+/***/ "./posts/doug-fir.md":
+/*!***************************!*\
+  !*** ./posts/doug-fir.md ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

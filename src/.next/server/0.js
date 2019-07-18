@@ -1,10 +1,10 @@
 exports.ids = [0];
 exports.modules = {
 
-/***/ "./content/posts/coastal-redwood.md":
-/*!******************************************!*\
-  !*** ./content/posts/coastal-redwood.md ***!
-  \******************************************/
+/***/ "./posts/coastal-redwood.md":
+/*!**********************************!*\
+  !*** ./posts/coastal-redwood.md ***!
+  \**********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 

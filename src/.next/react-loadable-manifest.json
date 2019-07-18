@@ -3,8 +3,8 @@
     {
       "id": "./posts/coastal-redwood.md",
       "name": "./posts/coastal-redwood.md",
-      "file": "static/chunks/5.js",
-      "publicPath": "static/chunks/5.js"
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
     }
   ],
   "./dev/noop": [
@@ -19,24 +19,24 @@
     {
       "id": "./posts/doug-fir.md",
       "name": "./posts/doug-fir.md",
-      "file": "static/chunks/6.js",
-      "publicPath": "static/chunks/6.js"
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ],
   "./rocky-mountain-juniper.md": [
     {
       "id": "./posts/rocky-mountain-juniper.md",
       "name": "./posts/rocky-mountain-juniper.md",
-      "file": "static/chunks/7.js",
-      "publicPath": "static/chunks/7.js"
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
     }
   ],
   "./the-oldest-living-organism-on-the-planet.md": [
     {
       "id": "./posts/the-oldest-living-organism-on-the-planet.md",
       "name": "./posts/the-oldest-living-organism-on-the-planet.md",
-      "file": "static/chunks/8.js",
-      "publicPath": "static/chunks/8.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     }
   ]
 }

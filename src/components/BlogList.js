@@ -31,7 +31,7 @@ const BlogList = () => {
     return posts.map(post => (
       <Link
         key={post.slug}
-        href={{ pathname: "/post", query: { id: post.slug } }}
+        href={{ pathname: "/blog", query: { id: post.slug } }}
       >
         <li className={blogListStyles.li}>
           <div className={blogListStyles.hero_image}>

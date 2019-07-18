@@ -30,7 +30,7 @@ module.exports = {"list":"_1R1HXa6JR_3gnN7PKydiG8","hero_image":"_2mt5W9LkT8Fq20
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1563477222770");
+            injectCss(link, link.href.split("?")[0] + "?unix=1563477936706");
           });
       }
     }
@@ -68,7 +68,7 @@ module.exports = {"header":"_2NlZ3WKmKqs2Y8LC8r1LLX","nav":"_1VtO2MTm1ES9Wv9-y8S
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1563477222892");
+            injectCss(link, link.href.split("?")[0] + "?unix=1563477936799");
           });
       }
     }
@@ -106,7 +106,7 @@ module.exports = {"layout":"zZmmvZgdxNx4F1Z5Rys3z","info_page":"_1Z2_AloHc9HO7Pn
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1563477222765");
+            injectCss(link, link.href.split("?")[0] + "?unix=1563477936703");
           });
       }
     }
@@ -143,7 +143,45 @@ module.exports = {"layout":"zZmmvZgdxNx4F1Z5Rys3z","info_page":"_1Z2_AloHc9HO7Pn
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1563477222803");
+            injectCss(link, link.href.split("?")[0] + "?unix=1563477936790");
+          });
+      }
+    }
+  
+
+/***/ }),
+
+/***/ "./styles/pages/blog.module.scss":
+/*!***************************************!*\
+  !*** ./styles/pages/blog.module.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"blog":"_tLWvY1IsKlC2A8fs0zq-","blog__hero":"rzDa9jZIt15KTBqFKN5KS","blog__info":"_1ZD4Xp5DpFSB70b8hlNhwv","blog__body":"_52bYM9ieIN-mriS3hlZGn","blog__footer":"_2EUFVSOad-PflRximL5oY6"};;
+    if (true) {
+      var injectCss = function injectCss(prev, href) {
+        var link = prev.cloneNode();
+        link.href = href;
+        link.onload = function() {
+          prev.parentNode.removeChild(prev);
+        };
+        prev.stale = true;
+        prev.parentNode.insertBefore(link, prev);
+      };
+      module.hot.dispose(function() {
+        window.__webpack_reload_css__ = true;
+      });
+      if (window.__webpack_reload_css__) {
+        module.hot.__webpack_reload_css__ = false;
+        console.log("[HMR] Reloading stylesheets...");
+        var prefix = document.location.protocol + '//' + document.location.host;
+        document
+          .querySelectorAll("link[href][rel=stylesheet]")
+          .forEach(function(link) {
+            if (!link.href.match(prefix) || link.stale) return;
+            injectCss(link, link.href.split("?")[0] + "?unix=1563478253742");
           });
       }
     }
