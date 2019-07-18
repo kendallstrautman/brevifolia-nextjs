@@ -24,16 +24,18 @@ const BlogList = () => {
         };
       });
       return data;
-    })(require.context("../content/posts", true, /\.md$/));
-    console.log(posts);
+    })(require.context("../posts", true, /\.md$/));
     return posts;
   }
   function renderPosts(posts) {
     return posts.map(post => (
-      <Link key={post.slug} href="/">
+      <Link
+        key={post.slug}
+        href={{ pathname: "/post", query: { id: post.slug } }}
+      >
         <li className={blogListStyles.li}>
           <div className={blogListStyles.hero_image}>
-            <img src="https://source.unsplash.com/random" />
+            <img src={post.document.data.hero_image} />
           </div>
           <div className={blogListStyles.blog__info}>
             <h1>{post.document.data.title}</h1>
@@ -52,46 +54,5 @@ const BlogList = () => {
     </ul>
   );
 };
-
-{
-  /* <Link href="/">
-        <li className={blogListStyles.li}>
-          <div className={blogListStyles.hero_image}>
-            <img src="https://source.unsplash.com/random" />
-          </div>
-          <div className={blogListStyles.blog__info}>
-            <h1>Blog Title</h1>
-            <h3> July 07, 1992</h3>
-            <p>Blog summary</p>
-          </div>
-        </li>
-      </Link> */
-}
-// BlogList.getInitialProps = async function() {
-//   // Get posts from folder
-//   const posts = (ctx => {
-//     const keys = ctx.keys();
-//     const values = keys.map(ctx);
-//     const data = keys.map((key, index) => {
-//       // Create slug from filename
-//       const slug = key
-//         .replace(/^.*[\\\/]/, "")
-//         .split(".")
-//         .slice(0, -1)
-//         .join(".");
-//       const value = values[index];
-//       // Parse document
-//       const document = matter(value);
-//       return {
-//         document,
-//         slug
-//       };
-//     });
-//     return data;
-//   })(require.context("../content/posts", true, /\.md$/));
-//   return {
-//     posts
-//   };
-// };
 
 export default BlogList;
