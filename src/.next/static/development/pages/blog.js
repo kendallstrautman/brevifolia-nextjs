@@ -13412,7 +13412,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 4);
+const fs = __webpack_require__(/*! fs */ 1);
 const sections = __webpack_require__(/*! section-matter */ "../node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "../node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "../node_modules/gray-matter/lib/stringify.js");
@@ -34008,18 +34008,7 @@ module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 4:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 9:
+/***/ 0:
 /*!*************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Fblog.js ***!
   \*************************************************************************************************************************************************************************/
@@ -34028,6 +34017,17 @@ module.exports = webpackAsyncContext;
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Fblog.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Fblog.js!./");
 
+
+/***/ }),
+
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 
@@ -34042,5 +34042,5 @@ module.exports = dll_e87fdfb005d1b68cff97;
 
 /***/ })
 
-},[[9,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=blog.js.map

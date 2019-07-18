@@ -1,5 +1,4 @@
-exports.ids = [3];
-exports.modules = {
+webpackHotUpdate(4,{
 
 /***/ "./posts/the-oldest-living-organism-on-the-planet.md":
 /*!***********************************************************!*\
@@ -14,5 +13,5 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ })
 
-};;
-//# sourceMappingURL=3.js.map
+})
+//# sourceMappingURL=4.f11eff31f99904a2674c.hot-update.js.map
