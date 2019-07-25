@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import BlogList from "../components/BlogList";
 import "../styles/index.scss";
 

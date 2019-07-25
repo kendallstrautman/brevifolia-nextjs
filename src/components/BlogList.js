@@ -1,7 +1,8 @@
 import Link from "next/link";
-import blogListStyles from "../styles/components/bloglist.module.scss";
+import blogListStyles from "../styles/components/bloglist.scss";
 import matter from "gray-matter";
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 const BlogList = () => {
   function getPosts() {
@@ -27,6 +28,12 @@ const BlogList = () => {
     })(require.context("../posts", true, /\.md$/));
     return posts;
   }
+  function truncateSummary(content) {
+    return content.slice(0, 200).trimEnd();
+  }
+  function reformatDate(fullDate) {
+    return fullDate.toDateString().slice(4);
+  }
   function renderPosts(posts) {
     return posts.map(post => (
       <Link
@@ -39,9 +46,8 @@ const BlogList = () => {
           </div>
           <div className={blogListStyles.blog__info}>
             <h1>{post.document.data.title}</h1>
-            <h3> some date</h3>
-
-            <p>summary</p>
+            <h3> {reformatDate(post.document.data.date)}</h3>
+            <ReactMarkdown source={truncateSummary(post.document.content)} />
           </div>
         </li>
       </Link>

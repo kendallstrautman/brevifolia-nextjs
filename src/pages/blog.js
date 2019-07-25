@@ -2,7 +2,7 @@ import React from "react";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 import Layout from "../components/Layout";
-import blogStyles from "../styles/pages/blog.module.scss";
+import blogStyles from "../styles/pages/blog.scss";
 
 export default class extends React.Component {
   static async getInitialProps({ query }) {
@@ -13,7 +13,7 @@ export default class extends React.Component {
     };
   }
   render() {
-    console.log(this.props);
+    console.log(blogStyles);
     return (
       <Layout>
         <article className={blogStyles.blog}>

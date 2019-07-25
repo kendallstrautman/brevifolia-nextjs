@@ -1,7 +1,7 @@
 {
   "devFiles": [
-    "static/development/dll/dll_f1f71f918d10dd7ba3cf.js",
-    "static/development/dll/dll_f1f71f918d10dd7ba3cf.js.map"
+    "static/development/dll/dll_01d0a7c9987aaa306804.js",
+    "static/development/dll/dll_01d0a7c9987aaa306804.js.map"
   ],
   "pages": {
     "/": [
@@ -28,10 +28,6 @@
       "static/runtime/webpack.js",
       "static/css/styles.chunk.css",
       "static/chunks/styles.js",
-      "static/runtime/main.js"
-    ],
-    "/next/dist/pages/_error": [
-      "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
   }

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1276,12 +1276,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/components/bloglist.module.scss */ "./styles/components/bloglist.module.scss");
-/* harmony import */ var _styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/components/bloglist.scss */ "./styles/components/bloglist.scss");
+/* harmony import */ var _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gray-matter */ "gray-matter");
 /* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-markdown */ "react-markdown");
+/* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_5__);
 
 var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blog-next/src/components/BlogList.js";
+
 
 
 
@@ -1310,6 +1313,14 @@ var BlogList = function BlogList() {
     return posts;
   }
 
+  function truncateSummary(content) {
+    return content.slice(0, 200).trimEnd();
+  }
+
+  function reformatDate(fullDate) {
+    return fullDate.toDateString().slice(4);
+  }
+
   function renderPosts(posts) {
     return posts.map(function (post) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
@@ -1322,56 +1333,57 @@ var BlogList = function BlogList() {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: _styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.li,
+        className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.li,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 43
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: _styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hero_image,
+        className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hero_image,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 44
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         src: post.document.data.hero_image,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 45
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: _styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.blog__info,
+        className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.blog__info,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 47
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 48
         },
         __self: this
       }, post.document.data.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 49
         },
         __self: this
-      }, " some date"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+      }, " ", reformatDate(post.document.data.date)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
+        source: truncateSummary(post.document.content),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 50
         },
         __self: this
-      }, "summary"))));
+      }))));
     });
   }
 
@@ -1380,10 +1392,10 @@ var BlogList = function BlogList() {
       posts = _useState2[0];
 
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-    className: _styles_components_bloglist_module_scss__WEBPACK_IMPORTED_MODULE_3___default.a.list,
+    className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.list,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 58
     },
     __self: this
   }, posts.length > 1 && renderPosts(posts));
@@ -1407,22 +1419,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "../node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/header.module.scss */ "./styles/components/header.module.scss");
-/* harmony import */ var _styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_components_header_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/header.scss */ "./styles/components/header.scss");
+/* harmony import */ var _styles_components_header_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_header_scss__WEBPACK_IMPORTED_MODULE_2__);
 var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blog-next/src/components/Header.js";
 
 
 
 function Header() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", {
-    className: _styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.header,
+    className: _styles_components_header_scss__WEBPACK_IMPORTED_MODULE_2___default.a.header,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: _styles_components_header_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.nav,
+    className: _styles_components_header_scss__WEBPACK_IMPORTED_MODULE_2___default.a.nav,
     role: "navigation",
     "aria-label": "main navigation",
     __source: {
@@ -1467,9 +1479,9 @@ function Header() {
 
 /***/ }),
 
-/***/ "./components/layout.js":
+/***/ "./components/Layout.js":
 /*!******************************!*\
-  !*** ./components/layout.js ***!
+  !*** ./components/Layout.js ***!
   \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1480,16 +1492,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/layout.module.scss */ "./styles/components/layout.module.scss");
-/* harmony import */ var _styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blog-next/src/components/layout.js";
+/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/layout.scss */ "./styles/components/layout.scss");
+/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blog-next/src/components/Layout.js";
 
 
 
 function Layout(props) {
   var primaryColor = "#404040";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "".concat(_styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.layout, " ").concat( false && false),
+    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.layout, " ").concat( false && false),
     style: {
       backgroundColor: "".concat( false && false)
     },
@@ -1505,7 +1517,7 @@ function Layout(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _styles_components_layout_module_scss__WEBPACK_IMPORTED_MODULE_2___default.a.content,
+    className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.content,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -1527,7 +1539,7 @@ function Layout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
 /* harmony import */ var _components_BlogList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/BlogList */ "./components/BlogList.js");
 /* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/index.scss */ "./styles/index.scss");
 /* harmony import */ var _styles_index_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_index_scss__WEBPACK_IMPORTED_MODULE_3__);
@@ -1538,7 +1550,7 @@ var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blo
 
 
 var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -1651,46 +1663,46 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./styles/components/bloglist.module.scss":
-/*!************************************************!*\
-  !*** ./styles/components/bloglist.module.scss ***!
-  \************************************************/
+/***/ "./styles/components/bloglist.scss":
+/*!*****************************************!*\
+  !*** ./styles/components/bloglist.scss ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"list": "_1R1HXa6JR_3gnN7PKydiG8",
-	"hero_image": "_2mt5W9LkT8Fq20EPHNY_-",
-	"blog__info": "RqE8xlXzShckrCBvrj5hV"
+	"list": "_2UkSX8XVQMl-bcUsylr_MO",
+	"hero_image": "_1U50a2mZC-jocrlapy8tci",
+	"blog__info": "_3LCLNOusWe0RIYXAATerrc"
 };
 
 /***/ }),
 
-/***/ "./styles/components/header.module.scss":
-/*!**********************************************!*\
-  !*** ./styles/components/header.module.scss ***!
-  \**********************************************/
+/***/ "./styles/components/header.scss":
+/*!***************************************!*\
+  !*** ./styles/components/header.scss ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"header": "_2NlZ3WKmKqs2Y8LC8r1LLX",
-	"nav": "_1VtO2MTm1ES9Wv9-y8SfK2"
+	"header": "_2xIw6JD5xbsWNR6fxQhyvw",
+	"nav": "_1TquZ9oJXwOQWLXYAgJ-Vf"
 };
 
 /***/ }),
 
-/***/ "./styles/components/layout.module.scss":
-/*!**********************************************!*\
-  !*** ./styles/components/layout.module.scss ***!
-  \**********************************************/
+/***/ "./styles/components/layout.scss":
+/*!***************************************!*\
+  !*** ./styles/components/layout.scss ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
 module.exports = {
-	"layout": "zZmmvZgdxNx4F1Z5Rys3z",
-	"info_page": "_1Z2_AloHc9HO7Pn9rlFEwc",
-	"content": "_2XTKcQ6mssVIM4uuynPjZJ"
+	"layout": "_3NjkSUy-gU_j1094p46EkW",
+	"info_page": "_27fGZw6Ql_Cc94VbW89U6O",
+	"content": "_2CsFybB88-dfa6ahinW1zj"
 };
 
 /***/ }),
@@ -1706,7 +1718,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -1946,6 +1958,17 @@ module.exports = require("prop-types-exact");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-markdown":
+/*!*********************************!*\
+  !*** external "react-markdown" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-markdown");
 
 /***/ }),
 
