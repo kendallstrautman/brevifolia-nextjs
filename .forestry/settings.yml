@@ -16,8 +16,7 @@ sections:
   label: Config
 - type: document
   path: config.json
-  label: Site Config
-  match: "**/*"
+  label: Site Info
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
