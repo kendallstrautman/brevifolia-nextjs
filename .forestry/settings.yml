@@ -12,6 +12,12 @@ sections:
   create: documents
   match: "**/*"
   new_doc_ext: md
+- type: heading
+  label: Config
+- type: document
+  path: config.json
+  label: Site Config
+  match: "**/*"
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
