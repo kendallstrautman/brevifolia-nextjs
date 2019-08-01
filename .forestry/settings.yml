@@ -17,8 +17,8 @@ sections:
 - type: document
   path: config.json
   label: Site Info
-upload_dir: static
-public_path: "/static"
+upload_dir: src/static
+public_path: src/static
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
