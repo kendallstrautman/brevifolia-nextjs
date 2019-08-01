@@ -24,7 +24,7 @@ use_front_matter_path: false
 file_template: ":filename:"
 instant_preview: true
 build:
-  preview_output_directory: public
+  preview_output_directory: src/.next
   instant_preview_command: yarn develop
   install_dependencies_command: yarn install
   preview_docker_image: node:10
