@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1523,27 +1523,33 @@ function (_React$Component) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(_default, [{
+    key: "reformatDate",
+    value: function reformatDate(fullDate) {
+      var date = new Date(fullDate);
+      return date.toDateString().slice(4);
+    }
+  }, {
     key: "render",
     value: function render() {
-      console.log(_styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a);
+      console.log(this.props.data);
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 22
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("article", {
         className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 19
+          lineNumber: 23
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("figure", {
         className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__hero,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 24
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -1551,47 +1557,47 @@ function (_React$Component) {
         alt: "blog_hero_".concat(this.props.data.title),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 25
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__info,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 31
         },
         __self: this
       }, this.props.data.title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 32
         },
         __self: this
-      }, "some date")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+      }, this.reformatDate(this.props.data.date))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__body,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 34
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_10___default.a, {
         source: this.props.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 35
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__footer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 37
         },
         __self: this
       }, "Written By: ", this.props.data.author)));
@@ -1732,7 +1738,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*****************************!*\
   !*** multi ./pages/blog.js ***!
   \*****************************/

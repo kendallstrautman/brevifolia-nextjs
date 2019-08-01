@@ -12,8 +12,12 @@ export default class extends React.Component {
       ...document
     };
   }
+  reformatDate(fullDate) {
+    const date = new Date(fullDate)
+    return date.toDateString().slice(4);
+  }
   render() {
-    console.log(blogStyles);
+    console.log(this.props.data);
     return (
       <Layout>
         <article className={blogStyles.blog}>
@@ -25,7 +29,7 @@ export default class extends React.Component {
           </figure>
           <div className={blogStyles.blog__info}>
             <h1>{this.props.data.title}</h1>
-            <h3>some date</h3>
+            <h3>{this.reformatDate(this.props.data.date)}</h3>
           </div>
           <div className={blogStyles.blog__body}>
             <ReactMarkdown source={this.props.content} />

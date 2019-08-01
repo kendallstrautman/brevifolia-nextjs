@@ -13315,7 +13315,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 4);
+const fs = __webpack_require__(/*! fs */ 1);
 const sections = __webpack_require__(/*! section-matter */ "../node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "../node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "../node_modules/gray-matter/lib/stringify.js");
@@ -33977,7 +33977,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ 6:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************************************************/
@@ -33986,17 +33997,6 @@ __webpack_require__.r(__webpack_exports__);
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js!./");
 
-
-/***/ }),
-
-/***/ 4:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
 
 /***/ }),
 
@@ -34011,5 +34011,5 @@ module.exports = dll_09412a5be180c798c2ca;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
