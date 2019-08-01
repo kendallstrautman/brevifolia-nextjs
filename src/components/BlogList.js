@@ -40,16 +40,20 @@ const BlogList = () => {
         key={post.slug}
         href={{ pathname: "/blog", query: { id: post.slug } }}
       >
+        <a>
         <li className={blogListStyles.li}>
+         
           <div className={blogListStyles.hero_image}>
             <img src={post.document.data.hero_image} />
           </div>
           <div className={blogListStyles.blog__info}>
-            <h1>{post.document.data.title}</h1>
+            <h2>{post.document.data.title}</h2>
             <h3> {reformatDate(post.document.data.date)}</h3>
             <ReactMarkdown source={truncateSummary(post.document.content)} />
           </div>
+          
         </li>
+        </a>
       </Link>
     ));
   }
