@@ -17,8 +17,16 @@ sections:
 - type: document
   path: config.json
   label: Site Info
-upload_dir: static
-public_path: "/static"
+upload_dir: src/static
+public_path: src/static
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
+instant_preview: true
+build:
+  preview_output_directory: src/.next
+  instant_preview_command: yarn develop
+  install_dependencies_command: yarn install
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
