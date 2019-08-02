@@ -9,7 +9,7 @@
     "develop": "next src",
     "build": "next build src",
     "start": "next start src",
-    "export": "next export",
+    "export": "next export src",
     "deploy": "yarn build && yarn export"
   },
   "dependencies": {
