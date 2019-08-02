@@ -1,0 +1,160 @@
+{
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/index.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/pages/blog.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/pages/info.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/components/layout.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/components/bloglist.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/components/header.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "ignored ../node_modules/gray-matter fs": 0,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/components/header.scss 0": 1,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/components/layout.scss 0": 2,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/pages/blog.scss 0": 3,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/components/bloglist.scss 0": 4,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/index.scss 0": 5,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/index.scss 1": 6,
+      "css ../node_modules/css-loader/index.js??ref--5-1!../node_modules/sass-loader/lib/loader.js??ref--5-2!styles/pages/info.scss 0": 7
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "styles": 2,
+      "static/FkxePqgNavqOTep7FxF28/pages/_app.js": 3,
+      "static/FkxePqgNavqOTep7FxF28/pages/_error.js": 4,
+      "static/FkxePqgNavqOTep7FxF28/pages/blog.js": 5,
+      "static/FkxePqgNavqOTep7FxF28/pages/index.js": 6,
+      "static/FkxePqgNavqOTep7FxF28/pages/info.js": 7,
+      "static/runtime/main.js": 8
+    },
+    "bySource": {
+      "0 posts lazy /^\\.\\/.*\\.md$/ groupOptions: {} namespace object ./coastal-redwood.md": 9,
+      "0 posts lazy /^\\.\\/.*\\.md$/ groupOptions: {} namespace object ./doug-fir.md": 10,
+      "0 posts lazy /^\\.\\/.*\\.md$/ groupOptions: {} namespace object ./rocky-mountain-juniper.md": 11,
+      "0 posts lazy /^\\.\\/.*\\.md$/ groupOptions: {} namespace object ./the-oldest-living-organism-on-the-planet.md": 12
+    },
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
