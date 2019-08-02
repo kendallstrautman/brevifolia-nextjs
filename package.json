@@ -8,7 +8,9 @@
   "scripts": {
     "develop": "next src",
     "build": "next build src",
-    "start": "next start src"
+    "start": "next start src",
+    "export": "next export",
+    "deploy": "yarn build && yarn export"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
