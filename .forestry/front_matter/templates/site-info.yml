@@ -34,8 +34,13 @@ fields:
     name: github_url
     label: github_url
 - type: text
-  name: primary_color
-  label: primary_color
-- type: text
   name: repository_url
   label: repository_url
+- name: primary_color
+  type: color
+  label: primary_color
+  config:
+    required: false
+    color_format: Hex
+  description: Enter primary color here - adjust Info Page background color
+  default: "#B1C4BF"
