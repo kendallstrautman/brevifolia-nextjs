@@ -25,6 +25,7 @@ fields:
   name: hero_image
   label: hero_image
 pages:
+- src/posts/doug-fir.md
 - src/posts/coastal-redwood.md
 - src/posts/the-oldest-living-organism-on-the-planet.md
 - src/posts/rocky-mountain-juniper.md
