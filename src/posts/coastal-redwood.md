@@ -1,6 +1,6 @@
 ---
 title: The coastal red giants
-author: ''
+author: Watson & Crick
 date: 2019-07-10T16:04:44.000+00:00
 hero_image: static/jj-ying-7JX0-bfiuxQ-unsplash.jpg
 
