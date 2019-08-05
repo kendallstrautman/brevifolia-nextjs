@@ -5,9 +5,19 @@ fields:
 - type: text
   name: title
   label: title
-- type: text
-  name: author
+- name: author
+  type: select
+  default: ''
+  config:
+    required: false
+    options: []
+    source:
+      type: documents
+      section: author-list
+      file: src/data/authors.json
+      path: authors
   label: author
+  description: Choose author's name, add new author via Author List in  Sidebar
 - type: datetime
   name: date
   label: date
