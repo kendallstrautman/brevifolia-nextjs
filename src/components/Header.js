@@ -13,8 +13,12 @@ export default function Header() {
           <h1>The Blog Title</h1>
         </Link>
         <div>
-          <Link href="/info">
-            <h1>info</h1>
+          <Link href={`${typeof window !== "undefined" &&
+          window.location.pathname == "/info" ?
+          "/" : "/info"}`}>
+            <h1>{`${typeof window !== "undefined" &&
+          window.location.pathname == "/info" ?
+          "close" : "info"}`}</h1>
           </Link>
         </div>
       </nav>

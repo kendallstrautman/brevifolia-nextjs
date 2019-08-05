@@ -1,5 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
+/***/ "../config.json":
+/*!**********************!*\
+  !*** ../config.json ***!
+  \**********************/
+/*! exports provided: title, description, contact, primary_color, repository_url, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"title\":\"A Blog Title\",\"description\":\"Starter blog using Forestry CMS with Next.js.\",\"contact\":{\"website_url\":\"https://forestry.io\",\"made_with_url\":\"https://gatsbyjs.com\",\"email\":\"info@forestry.io\",\"twitter_handle\":\"@forestryio\",\"twitter_url\":\"https://twitter.com/forestryio\",\"github_handle\":\"forestryio\",\"github_url\":\"https://github.com/forestryio\"},\"primary_color\":\"#707070\",\"repository_url\":\"https://github.com/kendallstrautman/starter-blog-next\"}");
+
+/***/ }),
+
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!************************************************************************!*\
   !*** ../node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -13315,7 +13326,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 1);
+const fs = __webpack_require__(/*! fs */ 4);
 const sections = __webpack_require__(/*! section-matter */ "../node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "../node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "../node_modules/gray-matter/lib/stringify.js");
@@ -33776,7 +33787,7 @@ function Header() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/info",
+    href: "".concat( true && window.location.pathname == "/info" ? "/" : "/info"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -33785,10 +33796,10 @@ function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
-  }, "info")))));
+  }, "".concat( true && window.location.pathname == "/info" ? "close" : "info"))))));
 }
 
 /***/ }),
@@ -33806,18 +33817,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/layout.scss */ "./styles/components/layout.scss");
-/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config.json */ "../config.json");
+var _config_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../config.json */ "../config.json", 1);
+/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/components/layout.scss */ "./styles/components/layout.scss");
+/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blog-next/src/components/Layout.js";
 
 
 
+
 function Layout(props) {
-  var primaryColor = "#404040";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.layout, " ").concat( true && window.location.pathname == "/info" && _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.info_page),
+    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.layout, " ").concat( true && window.location.pathname == "/info" && _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.info_page),
     style: {
-      backgroundColor: "".concat( true && window.location.pathname == "/info" && primaryColor)
+      backgroundColor: "".concat( true && window.location.pathname == "/info" && _config_json__WEBPACK_IMPORTED_MODULE_2__.primary_color)
     },
     __source: {
       fileName: _jsxFileName,
@@ -33831,7 +33844,7 @@ function Layout(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.content,
+    className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -33977,18 +33990,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 1:
-/*!********************!*\
-  !*** fs (ignored) ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-/* (ignored) */
-
-/***/ }),
-
-/***/ 6:
+/***/ 0:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************************************************/
@@ -33997,6 +33999,17 @@ __webpack_require__.r(__webpack_exports__);
 
 module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js! */"../node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js!./");
 
+
+/***/ }),
+
+/***/ 4:
+/*!********************!*\
+  !*** fs (ignored) ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/* (ignored) */
 
 /***/ }),
 
@@ -34011,5 +34024,5 @@ module.exports = dll_09412a5be180c798c2ca;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

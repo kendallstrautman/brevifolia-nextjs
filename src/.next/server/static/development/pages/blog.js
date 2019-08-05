@@ -121,10 +121,21 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "../config.json":
+/*!**********************!*\
+  !*** ../config.json ***!
+  \**********************/
+/*! exports provided: title, description, contact, primary_color, repository_url, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"title\":\"A Blog Title\",\"description\":\"Starter blog using Forestry CMS with Next.js.\",\"contact\":{\"website_url\":\"https://forestry.io\",\"made_with_url\":\"https://gatsbyjs.com\",\"email\":\"info@forestry.io\",\"twitter_handle\":\"@forestryio\",\"twitter_url\":\"https://twitter.com/forestryio\",\"github_handle\":\"forestryio\",\"github_url\":\"https://github.com/forestryio\"},\"primary_color\":\"#707070\",\"repository_url\":\"https://github.com/kendallstrautman/starter-blog-next\"}");
+
+/***/ }),
 
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/map.js":
 /*!*************************************************************!*\
@@ -1402,7 +1413,7 @@ function Header() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/info",
+    href: "".concat( false ? undefined : "/info"),
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16
@@ -1411,10 +1422,10 @@ function Header() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
-  }, "info")))));
+  }, "".concat( false ? undefined : "info"))))));
 }
 
 /***/ }),
@@ -1432,16 +1443,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
-/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/components/layout.scss */ "./styles/components/layout.scss");
-/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../config.json */ "../config.json");
+var _config_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../../config.json */ "../config.json", 1);
+/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/components/layout.scss */ "./styles/components/layout.scss");
+/* harmony import */ var _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3__);
 var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blog-next/src/components/Layout.js";
 
 
 
+
 function Layout(props) {
-  var primaryColor = "#404040";
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.layout, " ").concat( false && false),
+    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.layout, " ").concat( false && false),
     style: {
       backgroundColor: "".concat( false && false)
     },
@@ -1457,7 +1470,7 @@ function Layout(props) {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_2___default.a.content,
+    className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18
@@ -1738,7 +1751,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!*****************************!*\
   !*** multi ./pages/blog.js ***!
   \*****************************/

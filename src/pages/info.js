@@ -5,7 +5,7 @@ import data from "../../config.json";
 export default function Info() {
   return (
     <Layout>
-      <section className="blog_info">
+      <section className={infoStyles.info_blurb}>
         <h2>
           This blog was created using{" "}
           <a href={data.contact.website_url}>Forestry</a> &{" "}
@@ -19,7 +19,7 @@ export default function Info() {
           <li>
             <p>
               <a href={`mailto:${data.contact.email}`}>
-                Email: info@forestry.io
+                Email: {data.contact.email}
               </a>
             </p>
           </li>
@@ -39,27 +39,6 @@ export default function Info() {
           </li>
         </ul>
       </section>
-      <style jsx>{`
-        .blog_info {
-          max-width: 800px;
-          padding: 1.5rem 1.25rem;
-        }
-        p {
-          color: #ebebeb;
-        }
-
-        @media (min-width: 768px) {
-          .blog_info {
-            padding: 2rem;
-          }
-        }
-
-        @media (min-width: 1440px) {
-          .blog_info {
-            padding: 3rem;
-          }
-        }
-      `}</style>
     </Layout>
   );
 }

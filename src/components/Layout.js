@@ -1,8 +1,8 @@
 import Header from "./Header";
+import data from "../../config.json";
 import layoutStyles from "../styles/components/layout.scss";
 
 export default function Layout(props) {
-  const primaryColor = "#404040";
   return (
     <section
       className={`${layoutStyles.layout} ${typeof window !== "undefined" &&
@@ -11,7 +11,7 @@ export default function Layout(props) {
       style={{
         backgroundColor: `${typeof window !== "undefined" &&
           window.location.pathname == "/info" &&
-          primaryColor}`
+          data.primary_color}`
       }}
     >
       <Header />

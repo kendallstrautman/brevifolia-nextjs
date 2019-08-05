@@ -47,6 +47,71 @@
     width: 70vw;
     margin-left: 30vw; } }
 
+.OWEyILVB73DDjSAhxuC6N h1 {
+  margin-bottom: 0.7rem; }
+
+._3UOBIWjYykgtxA-ffuTai4 {
+  width: 100%;
+  margin: 0; }
+  ._3UOBIWjYykgtxA-ffuTai4 img {
+    margin-bottom: 0;
+    object-fit: cover; }
+
+._3cQmzIgfYjB8XDGf8tt--D {
+  padding: 1.5rem 1.25rem;
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto; }
+  ._3cQmzIgfYjB8XDGf8tt--D h1 {
+    margin-bottom: 0.66rem; }
+  ._3cQmzIgfYjB8XDGf8tt--D h3 {
+    margin-bottom: 0; }
+
+._1sMzyd_8giSMfzKu-1mdxF {
+  width: 100%;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  ._1sMzyd_8giSMfzKu-1mdxF a {
+    padding-bottom: 1.5rem; }
+  ._1sMzyd_8giSMfzKu-1mdxF p:last-child {
+    margin-bottom: 0; }
+
+._3wQM1KzLrwdW47CaJ2hGXW {
+  padding: 1.5rem 1.25rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .OWEyILVB73DDjSAhxuC6N {
+    display: flex;
+    flex-direction: column; }
+  ._1sMzyd_8giSMfzKu-1mdxF {
+    max-width: 800px;
+    padding: 0 2rem; }
+    ._1sMzyd_8giSMfzKu-1mdxF span {
+      width: 100%;
+      margin: 1.5rem auto; }
+  ._3UOBIWjYykgtxA-ffuTai4 img {
+    min-width: 100%; }
+  ._3cQmzIgfYjB8XDGf8tt--D {
+    text-align: center;
+    padding: 2rem 0; }
+    ._3cQmzIgfYjB8XDGf8tt--D h1 {
+      max-width: 500px;
+      margin: 0 auto 0.66rem auto; }
+  ._3wQM1KzLrwdW47CaJ2hGXW {
+    padding: 1rem 2rem 2rem 2rem; } }
+
+@media (min-width: 1440px) {
+  ._3cQmzIgfYjB8XDGf8tt--D {
+    padding: 3rem 0; }
+  ._3wQM1KzLrwdW47CaJ2hGXW {
+    padding: 1rem 2rem 3rem 2rem; } }
+
 ._2UkSX8XVQMl-bcUsylr_MO a:hover {
   opacity: 1; }
   ._2UkSX8XVQMl-bcUsylr_MO a:hover li div._1U50a2mZC-jocrlapy8tci img {
@@ -67,7 +132,8 @@
     object-fit: cover;
     object-position: 50% 50%;
     opacity: 1;
-    transition: opacity 0.3s ease; }
+    transition: opacity 0.3s ease;
+    min-height: 100%; }
 
 ._2UkSX8XVQMl-bcUsylr_MO ._3LCLNOusWe0RIYXAATerrc {
   display: flex;
@@ -110,7 +176,8 @@
     ._2UkSX8XVQMl-bcUsylr_MO ._1U50a2mZC-jocrlapy8tci img {
       min-width: 100%;
       height: 100%;
-      width: auto; }
+      width: auto;
+      min-height: 0; }
   ._2UkSX8XVQMl-bcUsylr_MO ._3LCLNOusWe0RIYXAATerrc {
     min-width: 70%; } }
 
@@ -809,70 +876,19 @@ p {
   p {
     line-height: 1.4375; } }
 
-.OWEyILVB73DDjSAhxuC6N h1 {
-  margin-bottom: 0.7rem; }
-
-._3UOBIWjYykgtxA-ffuTai4 {
-  width: 100%;
-  margin: 0; }
-  ._3UOBIWjYykgtxA-ffuTai4 img {
-    margin-bottom: 0;
-    object-fit: cover; }
-
-._3cQmzIgfYjB8XDGf8tt--D {
-  padding: 1.5rem 1.25rem;
-  width: 100%;
-  max-width: 768px;
-  margin: 0 auto; }
-  ._3cQmzIgfYjB8XDGf8tt--D h1 {
-    margin-bottom: 0.66rem; }
-  ._3cQmzIgfYjB8XDGf8tt--D h3 {
-    margin-bottom: 0; }
-
-._1sMzyd_8giSMfzKu-1mdxF {
-  width: 100%;
-  padding: 0 1.25rem;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  ._1sMzyd_8giSMfzKu-1mdxF a {
-    padding-bottom: 1.5rem; }
-  ._1sMzyd_8giSMfzKu-1mdxF p:last-child {
-    margin-bottom: 0; }
-
-._3wQM1KzLrwdW47CaJ2hGXW {
-  padding: 1.5rem 1.25rem;
-  width: 100%;
+._1vHx_vUHztgUe032KkEspB {
   max-width: 800px;
-  margin: 0 auto; }
+  padding: 1.5rem 1.25rem; }
+  ._1vHx_vUHztgUe032KkEspB p {
+    color: #ebebeb; }
 
 @media (min-width: 768px) {
-  .OWEyILVB73DDjSAhxuC6N {
-    display: flex;
-    flex-direction: column; }
-  ._1sMzyd_8giSMfzKu-1mdxF {
-    max-width: 800px;
-    padding: 0 2rem; }
-    ._1sMzyd_8giSMfzKu-1mdxF span {
-      width: 100%;
-      margin: 1.5rem auto; }
-  ._3UOBIWjYykgtxA-ffuTai4 img {
-    min-width: 100%; }
-  ._3cQmzIgfYjB8XDGf8tt--D {
-    text-align: center;
-    padding: 2rem 0; }
-    ._3cQmzIgfYjB8XDGf8tt--D h1 {
-      max-width: 500px;
-      margin: 0 auto 0.66rem auto; }
-  ._3wQM1KzLrwdW47CaJ2hGXW {
-    padding: 1rem 2rem 2rem 2rem; } }
+  ._1vHx_vUHztgUe032KkEspB {
+    padding: 2rem; } }
 
 @media (min-width: 1440px) {
-  ._3cQmzIgfYjB8XDGf8tt--D {
-    padding: 3rem 0; }
-  ._3wQM1KzLrwdW47CaJ2hGXW {
-    padding: 1rem 2rem 3rem 2rem; } }
+  ._1vHx_vUHztgUe032KkEspB {
+    padding: 3rem; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
