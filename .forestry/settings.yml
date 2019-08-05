@@ -15,7 +15,6 @@ sections:
 - type: document
   path: src/data/authors.json
   label: Author List
-  match: "**/*"
 - type: heading
   label: Config
 - type: document
