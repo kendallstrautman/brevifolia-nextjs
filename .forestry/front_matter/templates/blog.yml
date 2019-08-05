@@ -7,7 +7,7 @@ fields:
   label: title
 - name: author
   type: select
-  default: ''
+  default: The Collective Unconscious
   config:
     required: false
     options: []
