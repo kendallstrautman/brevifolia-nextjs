@@ -5,6 +5,8 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
 - name: author
   type: select
   default: The Collective Unconscious
@@ -21,6 +23,9 @@ fields:
 - type: datetime
   name: date
   label: date
+  config:
+    required: true
+  default: now
 - type: file
   name: hero_image
   label: hero_image
