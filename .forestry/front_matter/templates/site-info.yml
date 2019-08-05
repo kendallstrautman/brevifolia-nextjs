@@ -44,3 +44,5 @@ fields:
     color_format: Hex
   description: Enter primary color here - adjust Info Page background color
   default: "#B1C4BF"
+pages:
+- config.json
