@@ -7,7 +7,7 @@
 /*! exports provided: title, description, contact, primary_color, repository_url, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"title\":\"A Blog Title\",\"description\":\"Starter blog using Forestry CMS with Next.js.\",\"contact\":{\"website_url\":\"https://forestry.io\",\"made_with_url\":\"https://gatsbyjs.com\",\"email\":\"info@forestry.io\",\"twitter_handle\":\"@forestryio\",\"twitter_url\":\"https://twitter.com/forestryio\",\"github_handle\":\"forestryio\",\"github_url\":\"https://github.com/forestryio\"},\"primary_color\":\"#707070\",\"repository_url\":\"https://github.com/kendallstrautman/starter-blog-next\"}");
+module.exports = JSON.parse("{\"title\":\"A Blog Title\",\"description\":\"Starter blog using Forestry CMS with Next.js.\",\"contact\":{\"website_url\":\"https://forestry.io\",\"made_with_url\":\"https://gatsbyjs.com\",\"email\":\"info@forestry.io\",\"twitter_handle\":\"@forestryio\",\"twitter_url\":\"https://twitter.com/forestryio\",\"github_handle\":\"forestryio\",\"github_url\":\"https://github.com/forestryio\"},\"primary_color\":\"#AEC4BE\",\"repository_url\":\"https://github.com/kendallstrautman/starter-blog-next\"}");
 
 /***/ }),
 
@@ -33828,26 +33828,26 @@ var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blo
 
 function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.layout, " ").concat( true && window.location.pathname == "/info" && _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.info_page),
+    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.layout, " ").concat(props.pathname == "/info" && _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.info_page),
     style: {
-      backgroundColor: "".concat( true && window.location.pathname == "/info" && _config_json__WEBPACK_IMPORTED_MODULE_2__.primary_color)
+      backgroundColor: "".concat(props.pathname == "/info" && _config_json__WEBPACK_IMPORTED_MODULE_2__.primary_color)
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, props.children));
@@ -33876,8 +33876,9 @@ var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blo
 
 
 
-var Index = function Index() {
+var Index = function Index(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    pathname: props.url.pathname,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -33947,7 +33948,7 @@ webpackContext.id = "./posts sync recursive \\.md$";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The coastal red giants\nauthor: Ricardo Nagaoka\ndate: 2019-07-10T16:04:44.000+00:00\nhero_image: \"static/jj-ying-7JX0-bfiuxQ-unsplash.jpg\"\n---\n\nPseudotsuga menziesii is an evergreen conifer species in the pine family, Pinaceae. It is native to western North America and is known as Douglas fir,Douglas-fir,Oregon pine,and Columbian pine. There are two varieties: coast Douglas-fir (P. menziesii var. menziesii), and Rocky Mountain Douglas-fir (P. menziesii var. glauca).\n\nChicharrones kinfolk tumblr narwhal venmo. Iceland cloud bread 8-bit, hashtag single-origin coffee keffiyeh drinking vinegar cray banjo four dollar toast bespoke tbh live-edge celiac. YOLO dreamcatcher hot chicken selvage portland XOXO, single-origin coffee sustainable mustache thundercats fixie pour-over hexagon irony deep v. Farm-to-table ennui mixtape marfa raw denim austin hell of keffiyeh chia prism ethical. Polaroid biodiesel everyday carry VHS hot chicken chartreuse typewriter messenger bag. Cloud bread truffaut street art jean shorts chia.\n");
+/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The coastal red giants\nauthor: Watson & Crick\ndate: 2019-07-10T16:04:44.000+00:00\nhero_image: static/jj-ying-7JX0-bfiuxQ-unsplash.jpg\n\n---\nPseudotsuga menziesii is an evergreen conifer species in the pine family, Pinaceae. It is native to western North America and is known as Douglas fir,Douglas-fir,Oregon pine,and Columbian pine. There are two varieties: coast Douglas-fir (P. menziesii var. menziesii), and Rocky Mountain Douglas-fir (P. menziesii var. glauca).\n\nChicharrones kinfolk tumblr narwhal venmo. Iceland cloud bread 8-bit, hashtag single-origin coffee keffiyeh drinking vinegar cray banjo four dollar toast bespoke tbh live-edge celiac. YOLO dreamcatcher hot chicken selvage portland XOXO, single-origin coffee sustainable mustache thundercats fixie pour-over hexagon irony deep v. Farm-to-table ennui mixtape marfa raw denim austin hell of keffiyeh chia prism ethical. Polaroid biodiesel everyday carry VHS hot chicken chartreuse typewriter messenger bag. Cloud bread truffaut street art jean shorts chia.");
 
 /***/ }),
 
@@ -33960,7 +33961,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The truth about Doug-fir\nauthor: David Douglas\ndate: 2019-07-09T16:04:44.000+00:00\nhero_image: \"static/sonja-punz-N47B_zibNGo-unsplash.jpg\"\n---\n\nTousled aesthetic retro, tofu put a bird on it marfa lomo you probably haven't heard of them cronut venmo four dollar toast. Asymmetrical locavore portland flexitarian. Tattooed edison bulb franzen, wayfarers enamel pin pok pok crucifix asymmetrical brooklyn irony gastropub fixie. Gentrify meggings edison bulb migas fanny pack yuccie. Keytar ugh shaman sriracha. Cardigan succulents listicle meditation, next level fixie snackwave raw denim palo santo bitters hashtag lyft normcore hot chicken.\n\nMicrodosing vice etsy photo booth cliche migas chambray banjo pickled mumblecore four dollar toast hella XOXO scenester venmo. Sriracha adaptogen mumblecore, yr man bun vexillologist fanny pack. Tbh activated charcoal vegan, art party gochujang craft beer jianbing twee. Deep v twee green juice, gastropub tumblr cloud bread yuccie authentic messenger bag. Glossier enamel pin health goth, XOXO affogato seitan selfies. Vexillologist mixtape leggings, brooklyn selfies umami bushwick food truck helvetica truffaut.\n");
+/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The truth about Doug-fir\nauthor: Grace Hopper\ndate: 2019-07-09T16:04:44.000+00:00\nhero_image: static/sonja-punz-N47B_zibNGo-unsplash.jpg\n\n---\nTousled aesthetic retro, tofu put a bird on it marfa lomo you probably haven't heard of them cronut venmo four dollar toast. Asymmetrical locavore portland flexitarian. Tattooed edison bulb franzen, wayfarers enamel pin pok pok crucifix asymmetrical brooklyn irony gastropub fixie. Gentrify meggings edison bulb migas fanny pack yuccie. Keytar ugh shaman sriracha. Cardigan succulents listicle meditation, next level fixie snackwave raw denim palo santo bitters hashtag lyft normcore hot chicken.\n\nMicrodosing vice etsy photo booth cliche migas chambray banjo pickled mumblecore four dollar toast hella XOXO scenester venmo. Sriracha adaptogen mumblecore, yr man bun vexillologist fanny pack. Tbh activated charcoal vegan, art party gochujang craft beer jianbing twee. Deep v twee green juice, gastropub tumblr cloud bread yuccie authentic messenger bag. Glossier enamel pin health goth, XOXO affogato seitan selfies. Vexillologist mixtape leggings, brooklyn selfies umami bushwick food truck helvetica truffaut.");
 
 /***/ }),
 
@@ -33973,7 +33974,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The most incredible juniper\nauthor: Walt Whitman\ndate: 2019-07-08T16:05:29.000+00:00\nhero_image: \"static/adrien-olichon--aOsCcTJXWY-unsplash.jpg\"\n---\n\n**Juniperus scopulorum**, the Rocky Mountain juniper, is a species of juniper native to western North America, in Canada in British Columbia and southwest Alberta, in the United States from Washington east to North Dakota, south to Arizona and also locally western Texas, and northernmost Mexico from Sonora east to Coahuila. It grows at altitudes of 500–2,700 metres (1,600–8,900 ft) on dry soils, often together with other juniper species. \"Scopulorum\" means \"of the mountains.\n\n![Joshua Tree](static/heather-shevlin-3B_NrzTjajc-unsplash.jpg)\n\nChicharrones kinfolk tumblr narwhal venmo. Iceland cloud bread 8-bit, hashtag single-origin coffee keffiyeh drinking vinegar cray banjo four dollar toast bespoke tbh live-edge celiac. YOLO dreamcatcher hot chicken selvage portland XOXO, single-origin coffee sustainable mustache thundercats fixie pour-over hexagon irony deep v. Farm-to-table ennui mixtape marfa raw denim austin hell of keffiyeh chia prism ethical. Polaroid biodiesel everyday carry VHS hot chicken chartreuse typewriter messenger bag. Cloud bread truffaut street art jean shorts chia.\n");
+/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The most incredible juniper\nauthor: Father John Misty\ndate: 2019-07-08T16:05:29.000+00:00\nhero_image: static/adrien-olichon--aOsCcTJXWY-unsplash.jpg\n\n---\n**Juniperus scopulorum**, the Rocky Mountain juniper, is a species of juniper native to western North America, in Canada in British Columbia and southwest Alberta, in the United States from Washington east to North Dakota, south to Arizona and also locally western Texas, and northernmost Mexico from Sonora east to Coahuila. It grows at altitudes of 500–2,700 metres (1,600–8,900 ft) on dry soils, often together with other juniper species. \"Scopulorum\" means \"of the mountains.\n\n![Joshua Tree](static/heather-shevlin-3B_NrzTjajc-unsplash.jpg)\n\nChicharrones kinfolk tumblr narwhal venmo. Iceland cloud bread 8-bit, hashtag single-origin coffee keffiyeh drinking vinegar cray banjo four dollar toast bespoke tbh live-edge celiac. YOLO dreamcatcher hot chicken selvage portland XOXO, single-origin coffee sustainable mustache thundercats fixie pour-over hexagon irony deep v. Farm-to-table ennui mixtape marfa raw denim austin hell of keffiyeh chia prism ethical. Polaroid biodiesel everyday carry VHS hot chicken chartreuse typewriter messenger bag. Cloud bread truffaut street art jean shorts chia.");
 
 /***/ }),
 
@@ -33986,7 +33987,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The oldest living organism on the planet\nauthor: Donal Rusk Currey\ndate: 2019-07-10T07:00:00Z\nhero_image: \"static/maksim-shutov-JOEvZOTfp64-unsplash.jpg\"\n---\n\nThe term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species \"Species\") of [pine](https://en.wikipedia.org/wiki/Pine \"Pine\") tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae \"Pinaceae\"), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus \"Pinus\"), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth. The oldest _Pinus longaeva_ is more than 5,000 years old,[\\[1\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-oldest-1) making it the oldest known individual of any species.\n\n![](static/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg)\n\nDespite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession \"Primary succession\") species, tending to occupy new open ground.[\\[2\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-FEIS-2) They generally compete poorly in less-than-harsh environments, making them hard to cultivate.[\\[2\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-FEIS-2) In gardens, they succumb quickly to root rot.[\\[3\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-3) They do very well, however, where most other plants cannot even grow, such as in rocky [dolomitic](<https://en.wikipedia.org/wiki/Dolomite_(mineral)> \"Dolomite (mineral)\") soils in areas with virtually no rainfall.[\\[2\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-FEIS-2)\n\nBristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine \"Subalpine\") groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States \"Western United States\"). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone \"Conifer cone\") [seed plants](https://en.wikipedia.org/wiki/Seed_plant \"Seed plant\") commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer \"Conifer\"); the name comes from the prickles on the female cones.[\\[4\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-ARKive-4)\n");
+/* harmony default export */ __webpack_exports__["default"] = ("---\ntitle: The oldest living organism on the planet\nauthor: Albert Hoffman\ndate: 2019-07-10T07:00:00.000+00:00\nhero_image: static/maksim-shutov-JOEvZOTfp64-unsplash.jpg\n\n---\nThe term **bristlecone pine** covers three [species](https://en.wikipedia.org/wiki/Species \"Species\") of [pine](https://en.wikipedia.org/wiki/Pine \"Pine\") tree (family [Pinaceae](https://en.wikipedia.org/wiki/Pinaceae \"Pinaceae\"), genus [_Pinus_](https://en.wikipedia.org/wiki/Pinus \"Pinus\"), subsection _Balfourianae_). All three species are long-lived and highly resilient to harsh weather and bad soils. One of the three species, _Pinus longaeva_, is among the longest-lived life forms on Earth. The oldest _Pinus longaeva_ is more than 5,000 years old,[\\[1\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-oldest-1) making it the oldest known individual of any species.\n\n![](static/vincent-burkhead-LhlxYMfnTF0-unsplash.jpg)\n\nDespite their potential age and low reproductive rate, bristlecone pines, particularly _Pinus longaeva_, are usually a [first-succession](https://en.wikipedia.org/wiki/Primary_succession \"Primary succession\") species, tending to occupy new open ground.[\\[2\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-FEIS-2) They generally compete poorly in less-than-harsh environments, making them hard to cultivate.[\\[2\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-FEIS-2) In gardens, they succumb quickly to root rot.[\\[3\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-3) They do very well, however, where most other plants cannot even grow, such as in rocky [dolomitic](<https://en.wikipedia.org/wiki/Dolomite_(mineral)> \"Dolomite (mineral)\") soils in areas with virtually no rainfall.[\\[2\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-FEIS-2)\n\nBristlecone pines grow in scattered [subalpine](https://en.wikipedia.org/wiki/Subalpine \"Subalpine\") groves at high altitude in arid regions of the [Western United States](https://en.wikipedia.org/wiki/Western_United_States \"Western United States\"). Bristlecones, along with all related species in class Pinopsida, are [cone-bearing](https://en.wikipedia.org/wiki/Conifer_cone \"Conifer cone\") [seed plants](https://en.wikipedia.org/wiki/Seed_plant \"Seed plant\") commonly known as [conifers](https://en.wikipedia.org/wiki/Conifer \"Conifer\"); the name comes from the prickles on the female cones.[\\[4\\]](https://en.wikipedia.org/wiki/Bristlecone_pine#cite_note-ARKive-4)");
 
 /***/ }),
 

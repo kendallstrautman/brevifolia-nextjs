@@ -7,7 +7,7 @@
 /*! exports provided: title, description, contact, primary_color, repository_url, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"title\":\"A Blog Title\",\"description\":\"Starter blog using Forestry CMS with Next.js.\",\"contact\":{\"website_url\":\"https://forestry.io\",\"made_with_url\":\"https://gatsbyjs.com\",\"email\":\"info@forestry.io\",\"twitter_handle\":\"@forestryio\",\"twitter_url\":\"https://twitter.com/forestryio\",\"github_handle\":\"forestryio\",\"github_url\":\"https://github.com/forestryio\"},\"primary_color\":\"#707070\",\"repository_url\":\"https://github.com/kendallstrautman/starter-blog-next\"}");
+module.exports = JSON.parse("{\"title\":\"A Blog Title\",\"description\":\"Starter blog using Forestry CMS with Next.js.\",\"contact\":{\"website_url\":\"https://forestry.io\",\"made_with_url\":\"https://gatsbyjs.com\",\"email\":\"info@forestry.io\",\"twitter_handle\":\"@forestryio\",\"twitter_url\":\"https://twitter.com/forestryio\",\"github_handle\":\"forestryio\",\"github_url\":\"https://github.com/forestryio\"},\"primary_color\":\"#AEC4BE\",\"repository_url\":\"https://github.com/kendallstrautman/starter-blog-next\"}");
 
 /***/ }),
 
@@ -10052,26 +10052,26 @@ var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blo
 
 function Layout(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
-    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.layout, " ").concat( true && window.location.pathname == "/info" && _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.info_page),
+    className: "".concat(_styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.layout, " ").concat(props.pathname == "/info" && _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.info_page),
     style: {
-      backgroundColor: "".concat( true && window.location.pathname == "/info" && _config_json__WEBPACK_IMPORTED_MODULE_2__.primary_color)
+      backgroundColor: "".concat(props.pathname == "/info" && _config_json__WEBPACK_IMPORTED_MODULE_2__.primary_color)
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 18
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _styles_components_layout_scss__WEBPACK_IMPORTED_MODULE_3___default.a.content,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, props.children));
@@ -10101,8 +10101,9 @@ var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blo
 
 
 
-function Info() {
+function Info(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    pathname: props.url.pathname,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -10215,7 +10216,7 @@ function Info() {
 
 /***/ }),
 
-/***/ 7:
+/***/ 8:
 /*!*************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Finfo&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Finfo.js ***!
   \*************************************************************************************************************************************************************************/
@@ -10238,5 +10239,5 @@ module.exports = dll_09412a5be180c798c2ca;
 
 /***/ })
 
-},[[7,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=info.js.map
