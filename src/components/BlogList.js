@@ -32,7 +32,9 @@ const BlogList = () => {
     return content.slice(0, 200).trimEnd();
   }
   function reformatDate(fullDate) {
-    return fullDate.toDateString().slice(4);
+    console.log(fullDate)
+    return fullDate
+    // return fullDate.toDateString().slice(4);
   }
   function renderPosts(posts) {
     return posts.map(post => (
