@@ -28,7 +28,7 @@ file_template: ":filename:"
 instant_preview: true
 build:
   preview_output_directory: src/.next
-  instant_preview_command: yarn forestry:preview
+  instant_preview_command: yarn forestry-preview
   install_dependencies_command: yarn install
   preview_docker_image: node:10
   mount_path: "/srv"
