@@ -17,7 +17,6 @@ export default class extends React.Component {
     return date.toDateString().slice(4);
   }
   render() {
-    console.log(this.props);
     return (
       <Layout>
         <article className={blogStyles.blog}>
