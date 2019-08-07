@@ -33,7 +33,7 @@ const BlogList = () => {
   }
   function reformatDate(fullDate) {
     console.log(fullDate)
-    return fullDate
+    return fullDate.toString()
     // return fullDate.toDateString().slice(4);
   }
   function renderPosts(posts) {

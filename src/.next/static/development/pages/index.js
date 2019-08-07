@@ -33638,7 +33638,7 @@ var BlogList = function BlogList() {
 
   function reformatDate(fullDate) {
     console.log(fullDate);
-    return fullDate; // return fullDate.toDateString().slice(4);
+    return fullDate.toString(); // return fullDate.toDateString().slice(4);
   }
 
   function renderPosts(posts) {
