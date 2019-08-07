@@ -10,7 +10,8 @@
     "build": "next build src",
     "start": "next start src",
     "export": "next export src",
-    "deploy": "yarn build && yarn export"
+    "deploy": "yarn build && yarn export",
+    "forestry-preview": "next src -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
