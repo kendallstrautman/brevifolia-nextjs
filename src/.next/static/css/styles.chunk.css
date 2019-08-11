@@ -47,6 +47,20 @@
     width: 70vw;
     margin-left: 30vw; } }
 
+._1vHx_vUHztgUe032KkEspB {
+  max-width: 800px;
+  padding: 1.5rem 1.25rem; }
+  ._1vHx_vUHztgUe032KkEspB p {
+    color: #ebebeb; }
+
+@media (min-width: 768px) {
+  ._1vHx_vUHztgUe032KkEspB {
+    padding: 2rem; } }
+
+@media (min-width: 1440px) {
+  ._1vHx_vUHztgUe032KkEspB {
+    padding: 3rem; } }
+
 ._2UkSX8XVQMl-bcUsylr_MO a:hover {
   opacity: 1; }
   ._2UkSX8XVQMl-bcUsylr_MO a:hover li div._1U50a2mZC-jocrlapy8tci img {
@@ -840,14 +854,35 @@ p {
   justify-content: center; }
   ._1sMzyd_8giSMfzKu-1mdxF a {
     padding-bottom: 1.5rem; }
-  ._1sMzyd_8giSMfzKu-1mdxF p:last-child {
+  ._1sMzyd_8giSMfzKu-1mdxF :last-child {
     margin-bottom: 0; }
+  ._1sMzyd_8giSMfzKu-1mdxF h1, ._1sMzyd_8giSMfzKu-1mdxF h2, ._1sMzyd_8giSMfzKu-1mdxF h3, ._1sMzyd_8giSMfzKu-1mdxF h4, ._1sMzyd_8giSMfzKu-1mdxF h5, ._1sMzyd_8giSMfzKu-1mdxF h6, ._1sMzyd_8giSMfzKu-1mdxF p {
+    font-weight: normal; }
+  ._1sMzyd_8giSMfzKu-1mdxF p {
+    color: inherit; }
+  ._1sMzyd_8giSMfzKu-1mdxF ul {
+    list-style: initial; }
+  ._1sMzyd_8giSMfzKu-1mdxF ul, ._1sMzyd_8giSMfzKu-1mdxF ol {
+    margin-left: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding-left: 1.45rem; }
 
 ._3wQM1KzLrwdW47CaJ2hGXW {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.5rem 1.25rem;
   width: 100%;
   max-width: 800px;
   margin: 0 auto; }
+  ._3wQM1KzLrwdW47CaJ2hGXW h2 {
+    margin-bottom: 0; }
+  ._3wQM1KzLrwdW47CaJ2hGXW a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    ._3wQM1KzLrwdW47CaJ2hGXW a svg {
+      width: 20px; }
 
 @media (min-width: 768px) {
   .OWEyILVB73DDjSAhxuC6N {
@@ -859,6 +894,9 @@ p {
     ._1sMzyd_8giSMfzKu-1mdxF span {
       width: 100%;
       margin: 1.5rem auto; }
+    ._1sMzyd_8giSMfzKu-1mdxF ul, ._1sMzyd_8giSMfzKu-1mdxF ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem; }
   ._3UOBIWjYykgtxA-ffuTai4 img {
     min-width: 100%; }
   ._3cQmzIgfYjB8XDGf8tt--D {
@@ -868,13 +906,13 @@ p {
       max-width: 500px;
       margin: 0 auto 0.66rem auto; }
   ._3wQM1KzLrwdW47CaJ2hGXW {
-    padding: 1rem 2rem 2rem 2rem; } }
+    padding: 2.25rem; } }
 
 @media (min-width: 1440px) {
   ._3cQmzIgfYjB8XDGf8tt--D {
     padding: 3rem 0; }
   ._3wQM1KzLrwdW47CaJ2hGXW {
-    padding: 1rem 2rem 3rem 2rem; } }
+    padding: 2rem 2rem 3rem 2rem; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
