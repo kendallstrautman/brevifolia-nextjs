@@ -5,7 +5,9 @@ import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
 const BlogList = () => {
+
   function getPosts() {
+    //get posts & context from folder
     const posts = (ctx => {
       const keys = ctx.keys();
       const values = keys.map(ctx);
@@ -17,7 +19,7 @@ const BlogList = () => {
           .slice(0, -1)
           .join(".");
         const value = values[index];
-        // Parse document
+        // Parse yaml metadata in document
         const document = matter(value.default);
         return {
           document,
@@ -28,13 +30,16 @@ const BlogList = () => {
     })(require.context("../posts", true, /\.md$/));
     return posts;
   }
+
   function truncateSummary(content) {
     return content.slice(0, 200).trimEnd();
   }
+
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
     return fullDate.toDateString().slice(4);
   }
+
   function renderPosts(posts) {
     return posts.map(post => (
       <Link
@@ -58,7 +63,10 @@ const BlogList = () => {
       </Link>
     ));
   }
+
+  //store the posts in state with hook
   const [posts] = useState(getPosts());
+
   return (
     <ul className={blogListStyles.list}>
       {posts.length > 1 && renderPosts(posts)}

@@ -5,17 +5,21 @@ import Layout from "../components/Layout";
 import blogStyles from "../styles/pages/blog.scss";
 
 export default class extends React.Component {
+
   static async getInitialProps({ query }) {
     const post = await import(`../posts/${query.id}.md`);
+    //matter parses the yaml frontmatter
     const document = matter(post.default);
     return {
       ...document
     };
   }
+
   reformatDate(fullDate) {
     const date = new Date(fullDate)
     return date.toDateString().slice(4);
   }
+  
   render() {
     return (
       <Layout>
