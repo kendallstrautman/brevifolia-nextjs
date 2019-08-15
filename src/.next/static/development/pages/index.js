@@ -13326,7 +13326,7 @@ module.exports = Function.prototype.bind || implementation;
 "use strict";
 
 
-const fs = __webpack_require__(/*! fs */ 6);
+const fs = __webpack_require__(/*! fs */ 4);
 const sections = __webpack_require__(/*! section-matter */ "../node_modules/section-matter/index.js");
 const defaults = __webpack_require__(/*! ./lib/defaults */ "../node_modules/gray-matter/lib/defaults.js");
 const stringify = __webpack_require__(/*! ./lib/stringify */ "../node_modules/gray-matter/lib/stringify.js");
@@ -33612,13 +33612,14 @@ var _jsxFileName = "/Users/kendallstrautman/Forestry/initial-project/starter-blo
 
 var BlogList = function BlogList() {
   function getPosts() {
+    //get posts & context from folder
     var posts = function (ctx) {
       var keys = ctx.keys();
       var values = keys.map(ctx);
       var data = keys.map(function (key, index) {
         // Create slug from filename
         var slug = key.replace(/^.*[\\\/]/, "").split(".").slice(0, -1).join(".");
-        var value = values[index]; // Parse document
+        var value = values[index]; // Parse yaml metadata in document
 
         var document = gray_matter__WEBPACK_IMPORTED_MODULE_4___default()(value["default"]);
         return {
@@ -33653,65 +33654,66 @@ var BlogList = function BlogList() {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 45
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 49
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
         className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.li,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 50
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.hero_image,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
         src: post.document.data.hero_image,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 53
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.blog__info,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 55
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 56
         },
         __self: this
       }, post.document.data.title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 57
         },
         __self: this
       }, " ", reformatDate(post.document.data.date)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_5___default.a, {
         source: truncateSummary(post.document.content),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 58
         },
         __self: this
       })))));
     });
-  }
+  } //store the posts in state with hook
+
 
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(getPosts()),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 1),
@@ -33721,7 +33723,7 @@ var BlogList = function BlogList() {
     className: _styles_components_bloglist_scss__WEBPACK_IMPORTED_MODULE_3___default.a.list,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 71
     },
     __self: this
   }, posts.length > 1 && renderPosts(posts));
@@ -33992,7 +33994,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 4:
+/***/ 0:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fkendallstrautman%2FForestry%2Finitial-project%2Fstarter-blog-next%2Fsrc%2Fpages%2Findex.js ***!
   \**********************************************************************************************************************************************************************/
@@ -34004,7 +34006,7 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!********************!*\
   !*** fs (ignored) ***!
   \********************/
@@ -34026,5 +34028,5 @@ module.exports = dll_09412a5be180c798c2ca;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

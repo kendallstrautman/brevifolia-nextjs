@@ -121,7 +121,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1507,8 +1507,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-markdown */ "react-markdown");
 /* harmony import */ var react_markdown__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react_markdown__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/pages/blog.scss */ "./styles/pages/blog.scss");
-/* harmony import */ var _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../styles/pages/blog.scss */ "./styles/pages/blog.scss");
+/* harmony import */ var _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13__);
 
 
 
@@ -1547,21 +1547,21 @@ function (_React$Component) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 25
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("article", {
-        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog,
+        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13___default.a.blog,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("figure", {
-        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__hero,
+        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13___default.a.blog__hero,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 27
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -1569,47 +1569,47 @@ function (_React$Component) {
         alt: "blog_hero_".concat(this.props.data.title),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 28
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__info,
+        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13___default.a.blog__info,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 29
+          lineNumber: 33
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 34
         },
         __self: this
       }, this.props.data.title), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 35
         },
         __self: this
       }, this.reformatDate(this.props.data.date))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
-        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__body,
+        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13___default.a.blog__body,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_markdown__WEBPACK_IMPORTED_MODULE_10___default.a, {
         source: this.props.content,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 38
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
-        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_12___default.a.blog__footer,
+        className: _styles_pages_blog_scss__WEBPACK_IMPORTED_MODULE_13___default.a.blog__footer,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 40
         },
         __self: this
       }, "Written By: ", this.props.data.author)));
@@ -1631,6 +1631,7 @@ function (_React$Component) {
 
               case 3:
                 post = _context.sent;
+                //matter parses the yaml frontmatter
                 document = gray_matter__WEBPACK_IMPORTED_MODULE_9___default()(post["default"]);
                 return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, document));
 
@@ -1750,7 +1751,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/blog.js ***!
   \*****************************/
