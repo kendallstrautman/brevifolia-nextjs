@@ -1,10 +1,26 @@
 {
+  "../../data/config.json": [
+    {
+      "id": "./data/config.json",
+      "name": "./data/config.json",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
+  "../data/config.json": [
+    {
+      "id": "./data/config.json",
+      "name": "./data/config.json",
+      "file": "static/chunks/1.js",
+      "publicPath": "static/chunks/1.js"
+    }
+  ],
   "./coastal-redwood.md": [
     {
       "id": "./posts/coastal-redwood.md",
       "name": "./posts/coastal-redwood.md",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
+      "file": "static/chunks/2.js",
+      "publicPath": "static/chunks/2.js"
     }
   ],
   "./dev/noop": [
@@ -19,24 +35,24 @@
     {
       "id": "./posts/doug-fir.md",
       "name": "./posts/doug-fir.md",
-      "file": "static/chunks/2.js",
-      "publicPath": "static/chunks/2.js"
+      "file": "static/chunks/3.js",
+      "publicPath": "static/chunks/3.js"
     }
   ],
   "./rocky-mountain-juniper.md": [
     {
       "id": "./posts/rocky-mountain-juniper.md",
       "name": "./posts/rocky-mountain-juniper.md",
-      "file": "static/chunks/3.js",
-      "publicPath": "static/chunks/3.js"
+      "file": "static/chunks/4.js",
+      "publicPath": "static/chunks/4.js"
     }
   ],
   "./the-oldest-living-organism-on-the-planet.md": [
     {
       "id": "./posts/the-oldest-living-organism-on-the-planet.md",
       "name": "./posts/the-oldest-living-organism-on-the-planet.md",
-      "file": "static/chunks/4.js",
-      "publicPath": "static/chunks/4.js"
+      "file": "static/chunks/5.js",
+      "publicPath": "static/chunks/5.js"
     }
   ]
 }

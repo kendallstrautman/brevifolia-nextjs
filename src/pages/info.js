@@ -4,41 +4,41 @@ import data from "../../config.json";
 
 export default function Info(props) {
   return (
-    <Layout pathname={props.url.pathname}>
-      <section className={infoStyles.info_blurb}>
-        <h2>
-          This blog was created using{" "}
-          <a href={data.contact.website_url}>Forestry</a> &{" "}
-          <a href={data.contact.made_with_url}>Gatsby </a>
-          <br />
-          <br />
-          To get started, import this site into Forestry or checkout the
-          repository.
-        </h2>
-        <ul>
-          <li>
-            <p>
-              <a href={`mailto:${data.contact.email}`}>
-                Email: {data.contact.email}
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href={data.contact.twitter_url}>
-                Twitter: {data.contact.twitter_handle}
-              </a>
-            </p>
-          </li>
-          <li>
-            <p>
-              <a href={data.contact.github_url}>
-                Github: {data.contact.github_handle}
-              </a>
-            </p>
-          </li>
-        </ul>
-      </section>
-    </Layout>
+    <Layout pathname='info' bgColor={props.frontmatter.background_color} siteTitle={props.title}>
+    <section className="info_blurb">
+      <ReactMarkdown source={props.markdownBody} />
+    </section>
+    <style jsx>{`
+      .info_blurb {
+        max-width: 800px;
+        padding: 1.5rem 1.25rem;
+      }
+      
+      @media (min-width: 768px) {
+        .info_blurb {
+          padding: 2rem;
+        }
+      }
+      
+      @media (min-width: 1440px) {
+        .info_blurb {
+          padding: 3rem;
+        }
+      }
+    `}</style>
+  </Layout>
   );
+}
+
+
+Info.getInitialProps = async function() {
+  const content = await import(`../data/info.md`)
+  const config = await import(`../data/config.json`)
+  const data = matter(content.default)
+
+  return {
+    fileRelativePath: `src/data/info.md`,
+    title: config.title,
+    ...data
+  }
 }

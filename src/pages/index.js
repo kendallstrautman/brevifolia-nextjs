@@ -1,10 +1,9 @@
 import Layout from "../components/Layout";
 import BlogList from "../components/BlogList";
-import "../styles/index.scss";
 
 const Index = (props) => {
   return (
-    <Layout pathname={props.url.pathname}>
+    <Layout pathname="/" siteTitle={props.title}>
       <section>
         <BlogList />
       </section>
@@ -12,5 +11,13 @@ const Index = (props) => {
   );
 };
 
-
 export default Index;
+
+Index.getInitialProps = async function() {
+  const content = await import(`../data/config.json`)
+
+  return {
+    fileRelativePath: `src/data/config.json`,
+    ...content
+  }
+}

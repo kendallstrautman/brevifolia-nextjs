@@ -1,13 +1,25 @@
 import React from "react";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
-import Layout from "../components/Layout";
+import Layout from "./src/components/Layout";
 import blogStyles from "../styles/pages/blog.scss";
+import getPosts from './src/utils/getPosts';
+
+/*TODO
+-- paginate
+-- cross check styles
+  - body blog styles - reference nuxt?
+-- css bug...
+-- fix dynamic routing in production - need to add slugs to next config
+*/
 
 export default class extends React.Component {
 
   static async getInitialProps({ query }) {
     const post = await import(`../posts/${query.id}.md`);
+    console.log(this)
+    //add getNextBlogPath
+    const allBlogSlugs = getPosts()
     //matter parses the yaml frontmatter
     const document = matter(post.default);
     return {
