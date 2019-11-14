@@ -13,7 +13,10 @@ export default function Layout(props) {
       color: `${props.pathname == "info" && 'white'}`
     }}
   >
-    <Meta siteTitle={props.siteTitle} siteDescription={props.siteDescription} />
+    <Meta
+      siteTitle={props.siteTitle}
+      siteDescription={props.siteDescription}
+    />
     <Header siteTitle={props.siteTitle} />
     <div className="content">{props.children}</div>
     <style jsx>

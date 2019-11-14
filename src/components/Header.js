@@ -37,9 +37,6 @@ export default function Header(props) {
             flex-direction: row;
             align-items: center;
           }
-          img {
-            margin-bottom: 0;
-          }
           @media (min-width: 768px) {
             .header {
               height: 100vh;
