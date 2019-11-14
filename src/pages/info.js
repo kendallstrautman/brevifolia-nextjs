@@ -1,12 +1,14 @@
 import Layout from "../components/Layout";
-import infoStyles from "../styles/pages/info.scss";
-import data from "../../config.json";
+import matter from "gray-matter";
+import ReactMarkdown from "react-markdown";
 
 export default function Info(props) {
+  const frontmatter = props.data
+  const markdownBody = props.content
   return (
-    <Layout pathname='info' bgColor={props.frontmatter.background_color} siteTitle={props.title}>
+    <Layout pathname='info' bgColor={frontmatter.background_color} siteTitle={props.title}>
     <section className="info_blurb">
-      <ReactMarkdown source={props.markdownBody} />
+      <ReactMarkdown source={markdownBody} />
     </section>
     <style jsx>{`
       .info_blurb {
@@ -37,7 +39,6 @@ Info.getInitialProps = async function() {
   const data = matter(content.default)
 
   return {
-    fileRelativePath: `src/data/info.md`,
     title: config.title,
     ...data
   }
