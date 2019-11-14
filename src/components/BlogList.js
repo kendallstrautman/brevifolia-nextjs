@@ -1,34 +1,7 @@
 import Link from "next/link";
-import matter from "gray-matter";
-import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 
-const BlogList = () => {
-
-  function getPosts() {
-    //get posts & context from folder
-    const posts = (ctx => {
-      const keys = ctx.keys();
-      const values = keys.map(ctx);
-      const data = keys.map((key, index) => {
-        // Create slug from filename
-        const slug = key
-          .replace(/^.*[\\\/]/, "")
-          .split(".")
-          .slice(0, -1)
-          .join(".");
-        const value = values[index];
-        // Parse yaml metadata in document
-        const document = matter(value.default);
-        return {
-          document,
-          slug
-        };
-      });
-      return data;
-    })(require.context("../posts", true, /\.md$/));
-    return posts;
-  }
+const BlogList = (props) => {
 
   function truncateSummary(content) {
     return content.slice(0, 200).trimEnd();
@@ -39,13 +12,10 @@ const BlogList = () => {
     return date.toDateString().slice(4);
   }
 
-  //store the posts in state with hook
-  const [posts] = useState(getPosts());
-
   return (
     <>
       <ul className="list">
-        {posts.length > 1 && posts.map(post => (
+        {props.allBlogs.length > 1 && props.allBlogs.map(post => (
           <Link
             key={post.slug}
             href={{ pathname: `/blog/${post.slug}` }}
