@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown";
 import Layout from '../../components/Layout'
 
 export default function Page(props) {
-  console.log(props)
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
     return date.toDateString().slice(4);
