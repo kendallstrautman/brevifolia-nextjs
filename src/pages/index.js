@@ -3,7 +3,7 @@ import BlogList from "../components/BlogList";
 
 const Index = (props) => {
   return (
-    <Layout pathname="/" siteTitle={props.title}>
+    <Layout pathname="/" siteTitle={props.title} siteDescription={props.description}>
       <section>
         <BlogList />
       </section>

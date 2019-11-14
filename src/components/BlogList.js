@@ -53,7 +53,7 @@ const BlogList = () => {
             <a>
             <li>
               <div className="hero_image">
-                <img src={post.document.data.hero_image} />
+                <img src={post.document.data.hero_image} alt={post.document.data.hero_image} />
               </div>
               <div className="blog__info">
                 <h2>{post.document.data.title}</h2>
