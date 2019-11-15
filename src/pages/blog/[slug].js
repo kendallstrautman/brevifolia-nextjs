@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 
 import Layout from '../../components/Layout'
 
-export default function Page(props) {
+export default function BlogTemplate(props) {
   function reformatDate(fullDate) {
     const date = new Date(fullDate)
     return date.toDateString().slice(4);
@@ -13,7 +13,7 @@ export default function Page(props) {
   const frontmatter = props.data
 
   return (
-    <Layout siteTitle={props.title}>
+    <Layout siteTitle={props.siteTitle}>
     <article className="blog">
         <figure className="blog__hero">
         <img
@@ -169,14 +169,13 @@ export default function Page(props) {
 
 }
 
-Page.getInitialProps = async function(ctx) {
+BlogTemplate.getInitialProps = async function(ctx) {
   const { slug } = ctx.query
   const content = await import(`../../posts/${slug}.md`)
   const config = await import(`../../data/config.json`)
   const data = matter(content.default);
-
   return {
-    title: config.title,
+    siteTitle: config.title,
     ...data
   }
 }

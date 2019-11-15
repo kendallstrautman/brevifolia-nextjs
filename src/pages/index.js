@@ -4,7 +4,6 @@ import Layout from "../components/Layout";
 import BlogList from "../components/BlogList";
 
 const Index = (props) => {
-  console.log(props)
   return (
     <Layout pathname="/" siteTitle={props.title} siteDescription={props.description}>
       <section>
