@@ -22,6 +22,12 @@ The styles were coded & designed by yours truly, using [styled-jsx](https://gith
 
 ##  Quick Setup
 
+#### *Import Directly to Forestry*
+
+<a href="https://app.forestry.io/quick-start?repo=kendallstrautman/brevifolia-next-forestry&engine=other">
+    <img alt="Import this project into Forestry" src="https://assets.forestry.io/import-to-forestryK.svg" />
+</a>
+
 #### *Set-up Locally*
 In your terminal, navigate to where you would like this blog to live, then run 
 ```bash
