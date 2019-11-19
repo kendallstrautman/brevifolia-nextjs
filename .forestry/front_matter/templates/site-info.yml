@@ -1,0 +1,46 @@
+---
+label: Site Info
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: field_group
+  name: contact
+  label: contact
+  fields:
+  - type: text
+    name: website_url
+    label: website_url
+  - type: text
+    name: made_with_url
+    label: made_with_url
+  - type: text
+    name: email
+    label: email
+  - type: text
+    name: twitter_handle
+    label: twitter_handle
+  - type: text
+    name: twitter_url
+    label: twitter_url
+  - type: text
+    name: github_handle
+    label: github_handle
+  - type: text
+    name: github_url
+    label: github_url
+- type: text
+  name: repository_url
+  label: repository_url
+- name: primary_color
+  type: color
+  label: primary_color
+  config:
+    required: false
+    color_format: Hex
+  description: Enter primary color here - adjust Info Page background color
+  default: "#B1C4BF"
