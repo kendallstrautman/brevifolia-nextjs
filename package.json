@@ -1,7 +1,7 @@
 {
-  "name": "foresry-starter-blog-next",
+  "name": "brevifolia-nextjs",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Forestry & Next",
+  "description": "A simple starter to get up and developing quickly with Next.js",
   "license": "MIT",
   "version": "0.1.0",
   "author": "@kendallstraut",
@@ -10,8 +10,7 @@
     "build": "next build src",
     "start": "next start src",
     "export": "next export src",
-    "deploy": "yarn build && yarn export",
-    "forestry-preview": "next src -p 8080 -H 0.0.0.0"
+    "deploy": "yarn build && yarn export"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
@@ -27,11 +26,10 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "next",
-    "forestry"
+    "next"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kendallstrautman/starter-blog-next"
+    "url": "https://github.com/kendallstrautman/brevifolia-nextjs"
   }
 }
