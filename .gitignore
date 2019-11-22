@@ -2,3 +2,4 @@ node_modules
 src/.next
 .env
 src/out/
+.DS_Store
