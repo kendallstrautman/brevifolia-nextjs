@@ -26,7 +26,7 @@ cd brevifolia-nextjs
 
 #install dependencies & run dev server with yarn 
 yarn install
-yarn develop
+yarn dev
 
 ```
 This will start a dev server, navigate to localhost:3000 to check it out.
