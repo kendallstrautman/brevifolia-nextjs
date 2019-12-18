@@ -7,6 +7,7 @@
   "author": "@kendallstraut",
   "scripts": {
     "dev": "next src",
+    "develop": "yarn dev",
     "build": "next build src",
     "start": "next start src",
     "export": "next export src",
