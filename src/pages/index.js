@@ -1,5 +1,4 @@
 import matter from 'gray-matter'
-
 import Layout from '../components/Layout'
 import BlogList from '../components/BlogList'
 
@@ -19,10 +18,11 @@ const Index = props => {
 
 export default Index
 
-Index.getInitialProps = async function() {
+export async function getStaticProps() {
 	const siteConfig = await import(`../data/config.json`)
 	//get posts & context from folder
 	const posts = (context => {
+		console.log('context', context)
 		const keys = context.keys()
 		const values = keys.map(context)
 		const data = keys.map((key, index) => {
@@ -36,15 +36,19 @@ Index.getInitialProps = async function() {
 			// Parse yaml metadata & markdownbody in document
 			const document = matter(value.default)
 			return {
-				document,
+				frontmatter: document.data,
+				markdownBody: document.content,
 				slug
 			}
 		})
 		return data
 	})(require.context('../posts', true, /\.md$/))
-	console.log(siteConfig)
+
 	return {
-		allBlogs: posts,
-		...siteConfig.default
+		props: {
+			allBlogs: posts,
+			title: siteConfig.default.title,
+			description: siteConfig.default.description
+		}
 	}
 }
