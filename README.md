@@ -7,6 +7,8 @@
   Brevifolia
 </h1>
 
+> 04.01.2020: Repo was updated to use latest changes from [Next 9.3](https://nextjs.org/blog/next-9-3#next-gen-static-site-generation-ssg-support). Data fetching now uses `getStaticProps` & `getStaticPaths`.
+
 ## About
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/314f6fb1-b4a6-484a-ad3d-c26663a63bca/deploy-status)](https://app.netlify.com/sites/brevifolia-nextjs/deploys)
