@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.nextjs.org/">
-    <img src="src/static/nextjs-black-logo.svg" width="80" height="28">
+    <img src="src/public/static/nextjs-black-logo.svg" width="80" height="28">
   </a>
 </p>
 <h1 align="center">
