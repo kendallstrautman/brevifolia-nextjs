@@ -197,7 +197,6 @@ export async function getStaticPaths() {
 
 	// create paths with `slug` param
 	const paths = blogSlugs.map(slug => `/blog/${slug}`)
-	console.log('paths---------------------------------------', paths)
 	return {
 		paths,
 		fallback: true
