@@ -15,13 +15,13 @@
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
-    "next": "^9.0.2",
+    "next": "^9.3.3",
     "node-glob": "^1.2.0",
-    "raw-loader": "^3.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-markdown": "^4.1.0",
-    "webpack": "^4.37.0"
+    "raw-loader": "^4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "webpack": "^4.42.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
