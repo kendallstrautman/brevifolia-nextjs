@@ -11,7 +11,12 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
 		return date.toDateString().slice(4)
 	}
 
-	// Odd fix: could be a next bug
+	/*
+	 ** Odd fix to get build to run
+	 ** It seems like on first go the props
+	 ** are undefined — could be a Next bug?
+	 */
+
 	if (!frontmatter) return <></>
 
 	return (
