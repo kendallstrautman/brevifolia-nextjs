@@ -11,6 +11,9 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
 		return date.toDateString().slice(4)
 	}
 
+	// Odd fix: could be a next bug
+	if (!frontmatter) return <></>
+
 	return (
 		<Layout siteTitle={siteTitle}>
 			<article className='blog'>
@@ -169,6 +172,7 @@ export async function getStaticProps({ ...ctx }) {
 	const content = await import(`../../posts/${slug}.md`)
 	const config = await import(`../../data/config.json`)
 	const data = matter(content.default)
+
 	return {
 		props: {
 			siteTitle: config.title,
@@ -193,7 +197,7 @@ export async function getStaticPaths() {
 
 	// create paths with `slug` param
 	const paths = blogSlugs.map(slug => `/blog/${slug}`)
-
+	console.log('paths---------------------------------------', paths)
 	return {
 		paths,
 		fallback: true
