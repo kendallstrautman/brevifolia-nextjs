@@ -39,11 +39,10 @@ This will start a dev server, navigate to localhost:3000 to check it out.
 - Edit styles within each component or page file within the `<style jsx>` tags. 
 - Global styles live in the `Meta` component. 
 - `src/posts/`contains all your markdown blog posts.
-- `src/static/` is where you images live and will get uploaded.
+- `src/public/static/` is where you images live and will get uploaded.
 - `src/pages` is where you page components live. 
 - The blog pages are dynamically generated with a `slug` parameter. See the template in `src/pages/blog/[slug].js`. 
 - The pages & template are comprised of components from `src/components`.
-- The routes are generated in `next.config.js` with `exportPathMap`
 
 ## Deploy Options
 
