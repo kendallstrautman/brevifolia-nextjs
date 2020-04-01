@@ -22,7 +22,6 @@ export async function getStaticProps() {
 	const siteConfig = await import(`../data/config.json`)
 	//get posts & context from folder
 	const posts = (context => {
-		console.log('context', context)
 		const keys = context.keys()
 		const values = keys.map(context)
 		const data = keys.map((key, index) => {
