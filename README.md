@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.nextjs.org/">
-    <img src="public/static/nextjs-black-logo.svg" width="80" height="28">
+    <img src="public/static/icons/nextjs-black-logo.svg" width="80" height="28">
   </a>
 </p>
 <h1 align="center">
@@ -52,4 +52,4 @@ This will start a dev server, navigate to localhost:3000 to check it out.
 
 ## Deploy Options
 
-[![Deploy to Vercel](/button)](/import/project?template=https://github.com/kendallstrautman/brevifolia-nextjs)
+[![Deploy to Vercel](public/static/icons/deploy-vercel.svg)](https://vercel.com/import/project?template=https://github.com/kendallstrautman/brevifolia-nextjs)
