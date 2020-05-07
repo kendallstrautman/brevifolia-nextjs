@@ -88,16 +88,12 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-init-server!./");
+/******/ 	return __webpack_require__(__webpack_require__.s = "GX0O");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-init-server!./":
-/*!******************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-init-server ***!
-  \******************************************************************************************************/
-/*! exports provided: default */
+/***/ "GX0O":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113,4 +109,3 @@ __webpack_require__.r(__webpack_exports__);
 /***/ })
 
 /******/ });
-//# sourceMappingURL=init-server.js.map
