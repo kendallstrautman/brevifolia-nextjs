@@ -194,7 +194,7 @@ export async function getStaticPaths() {
   //remove path and extension to leave filename only
   const blogSlugs = blogs.map(file =>
     file
-      .split('/')[2]
+      .split('/')[1]
       .replace(/ /g, '-')
       .slice(0, -3)
       .trim()
