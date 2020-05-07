@@ -6,11 +6,11 @@
   "version": "0.1.0",
   "author": "@kendallstraut",
   "scripts": {
-    "dev": "next src",
+    "dev": "next",
     "develop": "yarn dev",
-    "build": "next build src",
-    "start": "next start src",
-    "export": "next export src",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
     "deploy": "yarn build && yarn export"
   },
   "dependencies": {
