@@ -49,3 +49,5 @@ This will start a dev server, navigate to localhost:3000 to check it out.
 - The routes are generated in `next.config.js` with `exportPathMap`
 
 ## Deploy Options
+
+[![Deploy to Vercel](/button)](/import/project?template=https://github.com/kendallstrautman/brevifolia-nextjs)
