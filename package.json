@@ -4,14 +4,12 @@
   "description": "A simple starter to get up and developing quickly with Next.js",
   "license": "MIT",
   "version": "0.1.0",
-  "author": "@kendallstraut",
+  "author": "kendallstrautman",
   "scripts": {
-    "dev": "next src",
+    "dev": "next",
     "develop": "yarn dev",
-    "build": "next build src",
-    "start": "next start src",
-    "export": "next export src",
-    "deploy": "yarn build && yarn export"
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
