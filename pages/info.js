@@ -10,7 +10,7 @@ export default function Info({ frontmatter, markdownBody, title }) {
       siteTitle={title}
     >
       <section className="info_blurb">
-        <ReactMarkdown source={markdownBody} />
+        <ReactMarkdown children={markdownBody} />
       </section>
       <style jsx>{`
         .info_blurb {

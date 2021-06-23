@@ -33,7 +33,7 @@ export default function BlogTemplate({ frontmatter, markdownBody, siteTitle }) {
           <h3>{reformatDate(frontmatter.date)}</h3>
         </div>
         <div className="blog__body">
-          <ReactMarkdown source={markdownBody} />
+          <ReactMarkdown children={markdownBody} />
         </div>
         <h2 className="blog__footer">Written By: {frontmatter.author}</h2>
       </article>
